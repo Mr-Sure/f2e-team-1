@@ -2,23 +2,22 @@
 
 ## 基础文件引入
 
-* 原则上所有js/css/font等文件的引用路径均为static.hpbanking.com
+* 原则上所有js/css/font等文件的引用路径均为static.pocketuniversity.cn 后期可解析出对应的京台服务器域名，进行CDN加速与前端开发调试。
+* 注意：目前 images/css/font/js等静态文件引用路径为http://www.pocketuniversity.cn/static  路径下,以项目名/版本号/静态资源目录/详细名称作为索引。
+* eg:http://www.pocketuniversity.cn/static/bangdan/1.0/js/manager/bundle.js 后期可在项目名下级加入版本号。
+## PC 项目
 
-### PC 项目
-
-	http://static.hpbanking.com/xg/base/css/1.0/reset.css
-	http://static.hpbanking.com/xg/base/js/1.0/??xg.js,combo.js
+	原则上每个页面需引入 http://static.pocketuniversity.cn/base/css/1.0/reset.css 初始化样式（视项目而定，可选）。
   
-### mobile 项目
+## 微信-WebAPP项目
 
-	可灵活选取js库，基本原则：轻量；(可使用zepto，就不用jquery.mobile)
+	基本依据VueJS + Webpack项目规范,个别项目可灵活选取js库，基本原则：轻量。(可使用Zepto/JQuery等)。
+	所选框架需在index.html页面，通过CDN加速中作为全局引入，以减少WebPack编译负载（Vue模板文件编译后原则不超过100K）。
 
 ## 版本控制
 
-	1.所有前端文件均需在svn做归档(内网：svn://192.168.18.14/xg)
+	1.原则上之后所有前端文件均需在SVN做归档(内网：https://desktop-igt33re/svn/svnTest)。
 
-	2.部分使用git的项目，在每次发布线上前需在svn提交
-
-	3.部分移动端项目，js/css文件使用相对路径放在项目中的，原则上也需在svn中进行提交归档
+	2.部分可使用Git的项目，在每次发布线上前需在SVN上进行提交。
 
   
