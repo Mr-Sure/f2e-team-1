@@ -1,6 +1,6 @@
 # css书写规范
 
-命名使用小写字母，复合单词用-连接，如xg-name
+命名使用小写字母，复合单词用-连接，如pocket-name
 
 根据内容或功能来命名，皮肤类的命名可以加入表现，如skin-blue，其他不推荐根据表现来命名
 
@@ -173,5 +173,5 @@ id和class的命名长度应该适中，不要太简略也不要太详细
 url() 函数中的路径不加引号
 
     body {
-        background: url(//baidu.com/img/bg.png) no-repeat 0 0;
+        background: url(//static.pocketuniversity.cn/bangdan/1.0/images/bg.png) no-repeat 0 0;
     }
