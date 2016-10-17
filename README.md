@@ -1,7 +1,9 @@
-f2e-team
+Pocket-Team
+
+Creat By Sure 
 ========
 
-xg f2e-team
+Pocket f2e-team
 
 * [项目规范](project-guideline.md)
 * [目录文件规范](dir-guideline.md)
